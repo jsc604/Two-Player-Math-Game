@@ -36,10 +36,10 @@ class Game
 
     if @player1.lives == 0
       puts "----- GAME OVER -----"
-      puts "#{@player2.name} wins with a score of #{@player2.lives}/3"
+      puts "#{@player2.name} wins with a score of #{@player2.lives}/#{@player1.lives}"
     elsif @player2.lives == 0
       puts "----- GAME OVER -----"
-      puts "#{@player1.name} wins with a score of #{@player1.lives}/3"
+      puts "#{@player1.name} wins with a score of #{@player1.lives}/#{@player2.lives}"
     end
   end
 
